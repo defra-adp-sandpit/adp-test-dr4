@@ -1,0 +1,10 @@
+services:
+  adp-test-dr4:
+    build:
+      context: .
+      target: production
+    image: adp-test-dr4
+    container_name: adp-test-dr4
+    environment:
+      APPINSIGHTS_CLOUDROLE: adp-test-dr4-local
+      APPINSIGHTS_CONNECTIONSTRING: ${APPINSIGHTS_CONNECTIONSTRING}

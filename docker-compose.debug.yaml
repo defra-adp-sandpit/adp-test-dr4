@@ -1,0 +1,3 @@
+services:
+  adp-test-dr4:
+    command: npm run start:debug
